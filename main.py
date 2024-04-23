@@ -4,8 +4,10 @@ import pandas as pd
 import os
 
 from NLPFunc import Two_file_comparision, combined_comparison
+from mangum import Mangum
 
 app = FastAPI()
+handler=Mangum(app)
 
 UPLOAD_FOLDER = "Sheet"
 
